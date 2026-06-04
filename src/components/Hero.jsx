@@ -110,7 +110,7 @@ function Hero() {
   "
           />
 
-          <div className="absolute inset-0 z-10"></div>
+          <div className="relative flex justify-center items-center z-10"></div>
         </div>
       </motion.div>
     </section>

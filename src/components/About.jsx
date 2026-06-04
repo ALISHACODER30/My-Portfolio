@@ -1,3 +1,5 @@
+import profile from "../assets/profile.png";
+
 function About() {
   return (
     <section id = "about" className="bg-[#0f0f0f] text-white py-32 px-8 md:px-16 lg:px-24">
@@ -7,10 +9,15 @@ function About() {
         {/* LEFT IMAGE */}
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+            src={profile}
             alt="about"
-            className="w-75 md:w-100 rounded-3xl border-2 border-cyan-400 shadow-lg shadow-cyan-500/20"
+            draggable="false"
+      onContextMenu={(e) => e.preventDefault()}
+            className="w-75 md:w-100 rounded-3xl border-2 border-cyan-400 shadow-lg shadow-cyan-500/20 select-none"
           />
+
+<div className="absolute inset-0 z-10"></div>
+
         </div>
 
         {/* RIGHT CONTENT */}

@@ -19,14 +19,14 @@ function Footer() {
         <div className="flex gap-6 text-2xl">
 
           <a
-            href="#"
+            href="https://github.com/ALISHACODER30"
             className="hover:text-cyan-400 transition"
           >
             <FaGithub />
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/alisha-taneja-cha21nd/"
             className="hover:text-cyan-400 transition"
           >
             <FaLinkedin />

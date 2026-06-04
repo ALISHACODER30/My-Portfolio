@@ -1,6 +1,9 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import profile from "../assets/profile.png";
+
+
 
 function Hero() {
   return (
@@ -40,9 +43,12 @@ function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center lg:justify-start">
-          <button className="bg-cyan-400 text-black px-8 py-3 rounded-xl font-semibold hover:scale-105 transition duration-300">
-            View Projects
-          </button>
+<a
+  href="#projects"
+  className="inline-block bg-cyan-400 text-black px-8 py-5 rounded-xl font-semibold hover:scale-105 transition duration-300"
+>
+  View Projects
+</a>
 
           <a
             href="/resume.pdf"
@@ -55,7 +61,7 @@ function Hero() {
 
           <div className="flex gap-5 mt-8 justify-center lg:justify-start">
             <a
-              href="https://github.com/"
+              href="https://github.com/ALISHACODER30"
               target="_blank"
               className="text-3xl hover:text-cyan-400 transition duration-300"
             >
@@ -63,7 +69,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/alisha-taneja-cha21nd/"
               target="_blank"
               className="text-3xl hover:text-cyan-400 transition duration-300"
             >
@@ -75,23 +81,39 @@ function Hero() {
 
       {/* RIGHT SECTION */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-        className="relative"
-      >
-        {/* Glow Effect */}
-        <div className="absolute inset-0 bg-cyan-500 blur-[120px] opacity-20 rounded-full"></div>
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1 }}
+  className="relative flex justify-center items-center"
+>
 
-        {/* Profile Card */}
-        <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full border-4 border-cyan-400 overflow-hidden shadow-lg shadow-cyan-500/20">
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
-            alt="profile"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </motion.div>
+  {/* BLURRED GLOW BACKGROUND */}
+  <div className="absolute w-80 h-80 bg-cyan-400 rounded-full blur-[130px] opacity-30"></div>
+
+  {/* IMAGE BOX */}
+  <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_45px_rgba(34,211,238,0.45)]">
+<img
+  src={profile}
+  alt="profile"
+  onContextMenu={(e) => e.preventDefault()}
+  draggable="false"
+  className="
+    select-none
+    w-full
+    h-full
+    object-cover
+    object-top
+    brightness-110
+    contrast-110
+  "
+/>
+
+  <div className="absolute inset-0 z-10"></div>
+
+</div>
+
+
+</motion.div>
     </section>
   );
 }

@@ -2,7 +2,6 @@ import netflix from "../assets/netflix.png";
 import weather from "../assets/weather.png";
 import movie from "../assets/movie.png";
 
-
 function Projects() {
   const projects = [
     {
@@ -11,6 +10,8 @@ function Projects() {
         "A responsive Netflix homepage clone built using HTML and CSS.",
       tech: "HTML, CSS",
       image: netflix,
+      github:
+        "https://github.com/ALISHACODER30/Netflix-Clone-using-html-css.git",
     },
 
     {
@@ -18,6 +19,7 @@ function Projects() {
       description: "A React app to search movies using API integration.",
       tech: "React, API, Tailwind",
       image: movie,
+      github: "https://github.com/ALISHACODER30/Movie-Search-app.git",
     },
 
     {
@@ -25,14 +27,15 @@ function Projects() {
       description: "A weather dashboard using real-time API data.",
       tech: "React, JavaScript, API",
       image: weather,
+      github: "https://github.com/ALISHACODER30/Weather---App-Clone.git",
     },
   ];
 
   return (
     <section
-  id="projects"
-  className="bg-[#0f0f0f] text-white py-32 px-8 md:px-16 lg:px-24"
->
+      id="projects"
+      className="bg-[#0f0f0f] text-white py-32 px-8 md:px-16 lg:px-24"
+    >
       <div className="max-w-7xl mx-auto">
         {/* HEADING */}
         <div className="text-center mb-16">
@@ -74,17 +77,21 @@ function Projects() {
 
                 {/* BUTTONS */}
                 <div className="flex gap-4 mt-6">
+                  {/* LIVE DEMO */}
                   <a
-                    href="#"
+                    href={project.live}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-cyan-400 text-black px-5 py-2 rounded-lg font-semibold hover:scale-105 transition"
                   >
                     Live Demo
                   </a>
 
+                  {/* GITHUB */}
                   <a
-                    href="#"
+                    href={project.github}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-cyan-400 px-5 py-2 rounded-lg hover:bg-cyan-400 hover:text-black transition"
                   >
                     GitHub

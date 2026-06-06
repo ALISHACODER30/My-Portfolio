@@ -77,14 +77,14 @@ function Projects() {
                 {/* BUTTONS */}
                 <div className="flex gap-4 mt-6">
                   {/* LIVE DEMO */}
-                  <a
+                  {/* <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-cyan-400 text-black px-5 py-2 rounded-lg font-semibold hover:scale-105 transition"
                   >
                     Live Demo
-                  </a>
+                  </a> */}
 
                   {/* GITHUB */}
                   <a

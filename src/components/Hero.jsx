@@ -14,7 +14,7 @@ function Hero() {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="max-w-2xl text-center lg:text-left mt-12 lg:mt-0"
+        className="relative z-20 max-w-2xl text-center lg:text-left mt-12 lg:mt-0"
       >
         <p className="text-cyan-400 text-lg mb-3">Hello, I'm</p>
 
@@ -45,7 +45,7 @@ function Hero() {
           <div className="flex flex-col sm:flex-row gap-5">
             <a
               href="#projects"
-              className="inline-block bg-cyan-400 text-black px-8 py-5 rounded-xl font-semibold hover:scale-105 transition duration-300"
+              className="inline-block bg-cyan-400 text-black px-8 py-5 rounded-xl font- semibold hover:scale-105 transition duration-300"
             >
               View Projects
             </a>
@@ -53,19 +53,19 @@ function Hero() {
             <a
               href="/resume.pdf"
               download
-              className="inline-block border border-cyan-400 px-8 py-5 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
+              className="inline-block border border-cyan-400 px-8 py-5 rounded-xl hover:bg-                         cyan-400 hover:text-black transition duration-300"
             >
               Download Resume
             </a>
           </div>
 
           {/* SOCIAL LINKS */}
-          <div className="flex gap-6 text-3xl">
+          <div className="flex gap-6 text-3xl mt-4">
             <a
               href="https://github.com/ALISHACODER30"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition duration-300"
+              className="cursor-pointer hover:text-cyan-400 transition duration-300"
             >
               <FaGithub />
             </a>
@@ -74,7 +74,7 @@ function Hero() {
               href="https://www.linkedin.com/in/alisha-taneja-cha21nd/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition duration-300"
+              className="cursor-pointer hover:text-cyan-400 transition duration-300"
             >
               <FaLinkedin />
             </a>
@@ -110,7 +110,7 @@ function Hero() {
   "
           />
 
-          <div className="relative flex justify-center items-center z-10"></div>
+          <div className="relative z-10 flex justify-center items-center"></div>
         </div>
       </motion.div>
     </section>

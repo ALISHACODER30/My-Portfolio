@@ -10,7 +10,7 @@ function Projects() {
         "A responsive Netflix homepage clone built using HTML and CSS.",
       tech: "HTML, CSS",
       image: netflix,
-      github:"https://github.com/ALISHACODER30/Netflix-Clone-using-html-css.git",
+      github:"https://github.com/ALISHACODER30/Netflix-Clone-using-html-css",
     },
 
     {
@@ -18,7 +18,7 @@ function Projects() {
       description: "A React app to search movies using API integration.",
       tech: "React, API, Tailwind",
       image: movie,
-      github: "https://github.com/ALISHACODER30/Movie-Search-app.git",
+      github: "https://github.com/ALISHACODER30/Movie-Search-app",
     },
 
     {
@@ -26,7 +26,7 @@ function Projects() {
       description: "A weather dashboard using real-time API data.",
       tech: "React, JavaScript, API",
       image: weather,
-      github: "https://github.com/ALISHACODER30/Weather---App-Clone.git",
+      github: "https://github.com/ALISHACODER30/Weather---App-Clone",
     },
   ];
 

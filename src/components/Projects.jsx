@@ -10,8 +10,7 @@ function Projects() {
         "A responsive Netflix homepage clone built using HTML and CSS.",
       tech: "HTML, CSS",
       image: netflix,
-      github:
-        "https://github.com/ALISHACODER30/Netflix-Clone-using-html-css.git",
+      github:"https://github.com/ALISHACODER30/Netflix-Clone-using-html-css.git",
     },
 
     {

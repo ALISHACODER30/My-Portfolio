@@ -11,7 +11,6 @@ function Projects() {
       tech: "HTML, CSS",
       image: netflix,
       github:"https://github.com/ALISHACODER30/Netflix-Clone-using-html-css",
-      Live:"https://net-clone-home-page.vercel.app/",
     },
 
     {

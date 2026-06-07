@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Skills() {
+  const [activeSkill, setActiveSkill] = useState(null);
+
   const skills = [
     "HTML5",
     "CSS3",
@@ -39,7 +43,14 @@ modern frontend experiences.
           {skills.map((skill, index) => (
             <div
               key={index}
-   className="bg-[#111] border border-gray-800 rounded-2xl p-8 flex justify-center items-center hover:border-cyan-400 hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-cyan-500/30"
+              onClick={() =>
+                setActiveSkill(activeSkill === index ? null : index)
+              }
+              className={`bg-[#111] border rounded-2xl p-8 flex justify-center items-center transition duration-300 shadow-lg touch-manipulation cursor-pointer hover:border-cyan-400 hover:-translate-y-2 hover:shadow-cyan-500/30 active:border-cyan-400 active:-translate-y-2 active:shadow-cyan-500/30 ${
+                activeSkill === index
+                  ? "border-cyan-400 -translate-y-2 shadow-cyan-500/30"
+                  : "border-gray-800"
+              }`}
             >
               <h3 className="text-xl font-semibold text-cyan-400">
                 {skill}

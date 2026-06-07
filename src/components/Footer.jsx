@@ -6,7 +6,7 @@ function Footer() {
 
       <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-5">
 
-        <div>
+        <div className="text-center md:text-left">
           <h2 className="text-2xl font-bold text-cyan-400">
             Alisha
           </h2>

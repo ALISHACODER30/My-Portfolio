@@ -11,6 +11,7 @@ function Projects() {
       tech: "HTML, CSS",
       image: netflix,
       github:"https://github.com/ALISHACODER30/Netflix-Clone-using-html-css",
+      Live:"https://netflix-clone-using-html-css-liard.vercel.app/",
     },
 
     {
@@ -19,6 +20,7 @@ function Projects() {
       tech: "React, API, Tailwind",
       image: movie,
       github: "https://github.com/ALISHACODER30/Movie-Search-app",
+      Live:"https://movie-search-app-two-nu.vercel.app/",
     },
 
     {
@@ -27,6 +29,7 @@ function Projects() {
       tech: "React, JavaScript, API",
       image: weather,
       github: "https://github.com/ALISHACODER30/Weather---App-Clone",
+      Live:"https://weather-app-clone-mu.vercel.app",
     },
   ];
 
@@ -77,14 +80,14 @@ function Projects() {
                 {/* BUTTONS */}
                 <div className="flex gap-4 mt-6">
                   {/* LIVE DEMO */}
-                  {/* <a
+                  <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-cyan-400 text-black px-5 py-2 rounded-lg font-semibold hover:scale-105 transition"
                   >
                     Live Demo
-                  </a> */}
+                  </a>
 
                   {/* GITHUB */}
                   <a

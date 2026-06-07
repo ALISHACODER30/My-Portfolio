@@ -45,7 +45,7 @@ function Hero() {
           <div className="flex flex-col sm:flex-row gap-5">
             <a
               href="#projects"
-              className="inline-block bg-cyan-400 text-black px-8 py-5 rounded-xl font- semibold hover:scale-105 transition duration-300"
+              className="inline-block tap-solid-btn px-8 py-5 rounded-xl"
             >
               View Projects
             </a>
@@ -53,7 +53,7 @@ function Hero() {
             <a
               href="/resume.pdf"
               download
-              className="inline-block border border-cyan-400 px-8 py-5 rounded-xl hover:bg-                         cyan-400 hover:text-black transition duration-300"
+              className="inline-block tap-outline-btn px-8 py-5 rounded-xl"
             >
               Download Resume
             </a>
@@ -65,7 +65,7 @@ function Hero() {
               href="https://github.com/ALISHACODER30"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer hover:text-cyan-400 transition duration-300"
+              className="cursor-pointer tap-link"
             >
               <FaGithub />
             </a>
@@ -74,7 +74,7 @@ function Hero() {
               href="https://www.linkedin.com/in/alisha-taneja-cha21nd/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer hover:text-cyan-400 transition duration-300"
+              className="cursor-pointer tap-link"
             >
               <FaLinkedin />
             </a>

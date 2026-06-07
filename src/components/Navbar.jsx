@@ -28,9 +28,9 @@ function Navbar() {
           <li key={link.href}>
             <a
               href={link.href}
-              className={`hover:text-cyan-400 transition duration-300 ${
+              className={`tap-link ${
                 link.href === "#home"
-                  ? "hover:underline underline-offset-8"
+                  ? "hover:underline active:underline underline-offset-8"
                   : ""
               }`}
             >
@@ -57,7 +57,7 @@ function Navbar() {
               key={link.href}
               href={link.href}
               onClick={handleNavClick}
-              className="text-lg font-medium cursor-pointer hover:text-cyan-400 transition duration-300"
+              className="text-lg font-medium cursor-pointer tap-link"
             >
               {link.label}
             </a>

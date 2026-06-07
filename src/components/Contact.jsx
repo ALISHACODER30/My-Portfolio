@@ -40,7 +40,8 @@ function Contact() {
           ></textarea>
 
           <button
-            className="bg-cyan-400 text-black py-4 rounded-xl font-semibold hover:scale-105 transition duration-300"
+            type="button"
+            className="tap-solid-btn w-full py-4 rounded-xl"
           >
             Send Message
           </button>

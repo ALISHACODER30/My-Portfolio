@@ -3,3 +3,37 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer components {
+  .tap-link {
+    @apply transition duration-300 touch-manipulation hover:text-cyan-400 active:text-cyan-400;
+  }
+
+  .tap-scale {
+    @apply transition duration-300 touch-manipulation hover:scale-105 active:scale-105;
+  }
+
+  .tap-solid-btn {
+    @apply transition duration-300 touch-manipulation bg-cyan-400 text-black font-semibold hover:scale-105 active:scale-105;
+  }
+
+  .tap-outline-btn {
+    @apply transition duration-300 touch-manipulation border border-cyan-400 hover:bg-cyan-400 hover:text-black active:bg-cyan-400 active:text-black;
+  }
+
+  .tap-card {
+    @apply transition duration-300 touch-manipulation cursor-pointer border border-gray-800 shadow-lg hover:border-cyan-400 hover:-translate-y-3 hover:shadow-cyan-500/20 active:border-cyan-400 active:-translate-y-3 active:shadow-cyan-500/20;
+  }
+
+  .tap-card-active {
+    @apply border-cyan-400 -translate-y-3 shadow-cyan-500/20;
+  }
+
+  .tap-skill-card {
+    @apply transition duration-300 touch-manipulation cursor-pointer border shadow-lg hover:border-cyan-400 hover:-translate-y-2 hover:shadow-cyan-500/30 active:border-cyan-400 active:-translate-y-2 active:shadow-cyan-500/30;
+  }
+
+  .tap-skill-card-active {
+    @apply border-cyan-400 -translate-y-2 shadow-cyan-500/30;
+  }
+}

@@ -20,14 +20,18 @@ function Footer() {
 
           <a
             href="https://github.com/ALISHACODER30"
-            className="hover:text-cyan-400 transition"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tap-link"
           >
             <FaGithub />
           </a>
 
           <a
             href="https://www.linkedin.com/in/alisha-taneja-cha21nd/"
-            className="hover:text-cyan-400 transition"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tap-link"
           >
             <FaLinkedin />
           </a>

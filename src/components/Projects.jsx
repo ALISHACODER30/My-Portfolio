@@ -1,8 +1,10 @@
 import netflix from "../assets/netflix.png";
 import weather from "../assets/weather.png";
 import movie from "../assets/movie.png";
+import useTapToggle from "../hooks/useTapToggle";
 
 function Projects() {
+  const { toggle, isActive } = useTapToggle();
   const projects = [
     {
       title: "Netflix Clone",
@@ -55,7 +57,10 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-black rounded-3xl overflow-hidden border border-gray-800 hover:border-cyan-400 transition duration-300 hover:-translate-y-3 hover:shadow-cyan-500/20 shadow-lg"
+              onClick={() => toggle(index)}
+              className={`bg-black rounded-3xl overflow-hidden tap-card ${
+                isActive(index) ? "tap-card-active" : ""
+              }`}
             >
               {/* IMAGE */}
               <img
@@ -79,21 +84,25 @@ function Projects() {
                 {/* BUTTONS */}
                 <div className="flex gap-4 mt-6">
                   {/* LIVE DEMO */}
-                  <a
-                    href={project.Live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-cyan-400 text-black px-5 py-2 rounded-lg font-semibold hover:scale-105 transition"
-                  >
-                    Live Demo
-                  </a>
+                  {project.Live && (
+                    <a
+                      href={project.Live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="tap-solid-btn px-5 py-2 rounded-lg"
+                    >
+                      Live Demo
+                    </a>
+                  )}
 
                   {/* GITHUB */}
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-cyan-400 px-5 py-2 rounded-lg hover:bg-cyan-400 hover:text-black transition"
+                    onClick={(e) => e.stopPropagation()}
+                    className="tap-outline-btn px-5 py-2 rounded-lg"
                   >
                     GitHub
                   </a>

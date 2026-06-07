@@ -1,7 +1,7 @@
-import { useState } from "react";
+import useTapToggle from "../hooks/useTapToggle";
 
 function Skills() {
-  const [activeSkill, setActiveSkill] = useState(null);
+  const { toggle, isActive } = useTapToggle();
 
   const skills = [
     "HTML5",
@@ -43,13 +43,9 @@ modern frontend experiences.
           {skills.map((skill, index) => (
             <div
               key={index}
-              onClick={() =>
-                setActiveSkill(activeSkill === index ? null : index)
-              }
-              className={`bg-[#111] border rounded-2xl p-8 flex justify-center items-center transition duration-300 shadow-lg touch-manipulation cursor-pointer hover:border-cyan-400 hover:-translate-y-2 hover:shadow-cyan-500/30 active:border-cyan-400 active:-translate-y-2 active:shadow-cyan-500/30 ${
-                activeSkill === index
-                  ? "border-cyan-400 -translate-y-2 shadow-cyan-500/30"
-                  : "border-gray-800"
+              onClick={() => toggle(index)}
+              className={`bg-[#111] rounded-2xl p-8 flex justify-center items-center tap-skill-card ${
+                isActive(index) ? "tap-skill-card-active" : "border-gray-800"
               }`}
             >
               <h3 className="text-xl font-semibold text-cyan-400">
